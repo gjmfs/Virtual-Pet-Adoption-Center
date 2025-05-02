@@ -1,0 +1,17 @@
+{
+  "name": "pet-adoption",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "client-i": "cd client && npm i",
+    "server-i": "cd server && npm i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
