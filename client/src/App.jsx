@@ -1,35 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { NavBar } from "./components/NavBar";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Profile } from "./pages/Profile";
+import { Add } from "./pages/Add";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export const App = () => {
+  const api = import.meta.env.VITE_API;
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+    <div className="App">
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home url={api} />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/add" element={<Add />} />
+      </Routes>
+    </div>
+  );
+};

@@ -1,0 +1,14 @@
+.Home {
+  padding: 24px;
+}
+.Home h2 {
+  text-align: center;
+  color: var(--color-1);
+  padding-top: 12px;
+}
+
+.Home span {
+  color: var(--color-1);
+  font-size: 24px;
+  text-align: center;
+}
