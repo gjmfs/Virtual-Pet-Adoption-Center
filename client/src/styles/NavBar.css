@@ -34,10 +34,10 @@ nav a {
   color: var(--text-color);
 }
 nav a.active {
-  color: goldenrod;
+  color: var(--accent-color);
 }
 nav a:hover {
-  color: #00f7ff;
+  color: var(--accent-color);
 }
 nav .home-link {
   margin-right: auto;

@@ -7,11 +7,11 @@ const calculateMood = (createdAt) => {
   const diffDays = now.diff(created, "days");
 
   if (diffDays < 1) {
-    return "Happy";
+    return "happy";
   } else if (diffDays >= 1 && diffDays <= 3) {
-    return "Excited";
+    return "excited";
   } else {
-    return "Sad";
+    return "sad";
   }
 };
 

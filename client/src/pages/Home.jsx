@@ -32,7 +32,7 @@ export const Home = ({ url }) => {
           delaySpeed={1000}
         />
       </span>
-      <div className="AllCards">
+      <div className="AllCards mt-3">
         <div className="contaier">
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 ">
             {cards}

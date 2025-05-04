@@ -19,6 +19,8 @@ export const NavBar = () => {
         <label htmlFor="sidebar-active" className="close-sidebar-button">
           <img className="icons" src={close} />
         </label>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/filter">Filter by Mood</NavLink>
         <NavLink to="/add">Add a Pet</NavLink>
       </div>
     </nav>
