@@ -24,7 +24,7 @@ npm run client-i
 npm run server-i
 ```
 
-You need some environment setup for server site code so follow these steps to complete.
+You need some environment setup for server site code and client site code so follow these steps to complete.
 
 4. create a file named .env under server directory.
 
@@ -37,6 +37,18 @@ cd server && touch .env
 ```bash
 mongoDB:"Your_mongoDB_connection_string"
 port:"port_number_for_backend"
+```
+
+6. create a file named .env under client directory.
+
+```bash
+cd client && touch .env
+```
+
+7. set environment variables
+
+```bash
+VITE_API="your_backend_url"
 ```
 
 Note : This command only works on linux terminal or windows git terminal. this commands not gonna work on CMD or Powershell. you need to manually setup this one if this command not work.
